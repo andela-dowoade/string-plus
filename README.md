@@ -4,9 +4,9 @@ Extends the Javascript String Object
 
 ##Functions
 
-toUpper (typeof String): Returns the String in question but with all characters in upper cases as applicable. This method should be implemented without the use of the toUpperCase internal methods.
+toUpper (typeof String): Returns the String in question but with all characters in upper case as applicable. This method should be implemented without the use of the toUpperCase internal methods.
 
-toLower (typeof String): Returns the String in question but with all characters in their lower cases as applicable. 
+toLower (typeof String): Returns the String in question but with all characters in their lower case as applicable. 
 
 ucFirst (typeof String): Returns the String in question but changes the First Character to an Upper case. 
 
