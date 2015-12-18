@@ -20,8 +20,8 @@ String.prototype.isQuestion = function() {
 };
 
 String.prototype.words = function() {
-  var match = this.match(/[a-z]+/gi);
-  if (match === null | match === undefined) {
+  var _match = this.match(/[a-z]+/gi);
+  if (_match === null | _match === undefined) {
     return [];
   } else {
     return _match;
