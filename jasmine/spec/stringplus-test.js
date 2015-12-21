@@ -102,7 +102,7 @@ describe('Extend string', function() {
 
   describe('fromCurrency prototype', function() {
     it('fromCurrency function should be defined', function() {
-      expect(dummyString.toCurrency).toBeDefined();
+      expect(dummyString.fromCurrency).toBeDefined();
     });
 
     it('Should format currency as number', function() {

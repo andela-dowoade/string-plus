@@ -32,5 +32,5 @@ String.prototype.toCurrency = function() {
 };
 
 String.prototype.fromCurrency = function() {
-  return parseFloat(this.replace(/[,]/g, ''), false);
+  return parseFloat(this.replace(/[,]/g, ''));
 };
