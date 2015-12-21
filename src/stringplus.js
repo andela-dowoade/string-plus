@@ -1,6 +1,6 @@
 'use strict';
 String.prototype.isVowel = function() {
-  return /[aeiou]/.test(this);
+  return /[aeiou]/i.test(this);
 };
 
 String.prototype.toUpper = function() {
@@ -20,12 +20,7 @@ String.prototype.isQuestion = function() {
 };
 
 String.prototype.words = function() {
-  var _match = this.match(/[a-z]+/gi);
-  if (_match === null | _match === undefined) {
-    return [];
-  } else {
-    return _match;
-  }
+  return this.match(/[a-z]+/gi) || [];
 };
 
 String.prototype.wordCount = function() {
@@ -33,7 +28,7 @@ String.prototype.wordCount = function() {
 };
 
 String.prototype.toCurrency = function() {
-  return parseFloat(this).toFixed(2).toString().replace(/\d(?=(\d{3})+[\.\0]+)/g, (x) => x + ',');
+  return parseFloat(this).toFixed(2).replace(/\d(?=(\d{3})+[\.\0]+)/g, (x) => x + ',');
 };
 
 String.prototype.fromCurrency = function() {
